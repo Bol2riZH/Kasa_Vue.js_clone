@@ -23,17 +23,25 @@ export default {
   height: 255px;
   background: linear-gradient(#ff6060 50%, #743939);
   border-radius: 1rem;
+  transition: scale 100ms ease-in-out;
 }
 .card:hover {
   scale: 102%;
   cursor: pointer;
 }
+
 h2 {
   position: absolute;
   font-size: 1.8rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 768px) {
+  h2 {
+    width: 32rem;
+  }
+}
+
 img {
   object-fit: cover;
   width: 100%;
