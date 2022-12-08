@@ -1,6 +1,7 @@
 <script setup>
 import data from '../../api/hosts.json';
 import Header from '../layout/Header.vue';
+import Footer from '../layout/Footer.vue';
 import HostCard from '../HostCard.vue';
 </script>
 
@@ -15,6 +16,7 @@ import HostCard from '../HostCard.vue';
       <HostCard :hosts="hosts" />
     </ul>
   </section>
+  <Footer />
 </template>
 
 <script>
@@ -29,4 +31,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+</style>
