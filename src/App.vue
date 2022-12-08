@@ -1,9 +1,15 @@
 <script setup>
-import Header from './components/layout/Header.vue';
+import Home from './components/pages/Home.vue';
 </script>
 
 <template>
-  <Header />
+  <Home />
 </template>
+
+<script>
+export default {
+  name: 'App',
+};
+</script>
 
 <style scoped></style>
