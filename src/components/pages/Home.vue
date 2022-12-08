@@ -1,23 +1,17 @@
 <script setup>
 import data from '../../api/hosts.json';
-import Header from '../layout/Header.vue';
-import Footer from '../layout/Footer.vue';
 import HostCard from '../HostCard.vue';
 </script>
 
 <template>
-  <main>
-    <Header />
-    <section>
-      <div class="subtitle">
-        <p>Chez vous, partout et ailleurs</p>
-      </div>
-      <ul>
-        <HostCard :hosts="hosts" />
-      </ul>
-    </section>
-    <Footer />
-  </main>
+  <section>
+    <div class="subtitle">
+      <p>Chez vous, partout et ailleurs</p>
+    </div>
+    <ul>
+      <HostCard :hosts="hosts" />
+    </ul>
+  </section>
 </template>
 
 <script>
@@ -30,7 +24,7 @@ export default {
 </script>
 
 <style scoped>
-main {
+section {
   max-width: 1440px;
   margin: 0 auto;
 }

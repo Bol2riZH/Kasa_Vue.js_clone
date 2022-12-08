@@ -1,9 +1,14 @@
 <script setup>
 import Home from './components/pages/Home.vue';
+import Header from './components/layout/Header.vue';
+import Footer from './components/layout/Footer.vue';
 </script>
 
 <template>
-  <Home />
+  <Header />
+  <router-view />
+  <Footer />
+  <!--  <Home />-->
 </template>
 
 <script>

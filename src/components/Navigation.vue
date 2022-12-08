@@ -1,8 +1,10 @@
 <template>
-  <ul>
-    <li :class="{ active: isActive }" @click="onClick()">ACCUEIL</li>
-    <li :class="{ active: !isActive }" @click="onClick()">A PROPOS</li>
-  </ul>
+  <nav>
+    <!--    <li :class="{ active: isActive }" @click="onClick()">ACCUEIL</li>-->
+    <!--    <li :class="{ active: !isActive }" @click="onClick()">A PROPOS</li>-->
+    <router-link to="/">ACCUEIL</router-link>
+    <router-link to="/about">A PROPOS</router-link>
+  </nav>
 </template>
 
 <script>
@@ -22,17 +24,17 @@ export default {
 </script>
 
 <style scoped>
-ul {
+nav {
   display: flex;
   gap: 2rem;
   word-wrap: normal;
   font-size: clamp(1.4rem, 2vw, 2.4rem);
   margin-left: clamp(0rem, 1vw, 6.7rem);
 }
-li:hover {
+a:hover {
   cursor: pointer;
 }
-.active {
+.router-link-active {
   text-decoration: underline;
 }
 </style>
