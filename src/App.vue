@@ -5,10 +5,11 @@ import Footer from './components/layout/Footer.vue';
 </script>
 
 <template>
-  <Header />
-  <router-view />
+  <main>
+    <Header />
+    <router-view />
+  </main>
   <Footer />
-  <!--  <Home />-->
 </template>
 
 <script>
@@ -17,4 +18,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+</style>

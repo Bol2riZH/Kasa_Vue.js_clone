@@ -1,5 +1,10 @@
 <template>
-  <li v-for="host in hosts" :key="host.id" class="card">
+  <li
+    v-for="host in hosts"
+    :key="host.id"
+    class="card"
+    @click="gotToHost(host.id)"
+  >
     <h2>{{ host.title }}</h2>
     <img :src="host.cover" alt="host place" />
   </li>
@@ -10,6 +15,11 @@ export default {
   name: 'HostCard',
   props: {
     hosts: Array,
+  },
+  methods: {
+    gotToHost(id) {
+      this.$router.push('/host/' + id);
+    },
   },
 };
 </script>

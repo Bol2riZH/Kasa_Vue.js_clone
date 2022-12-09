@@ -4,14 +4,16 @@ import HostCard from '../HostCard.vue';
 </script>
 
 <template>
-  <section>
-    <div class="subtitle">
-      <p>Chez vous, partout et ailleurs</p>
-    </div>
-    <ul>
-      <HostCard :hosts="hosts" />
-    </ul>
-  </section>
+  <main>
+    <section>
+      <div class="subtitle">
+        <p>Chez vous, partout et ailleurs</p>
+      </div>
+      <ul>
+        <HostCard :hosts="hosts" />
+      </ul>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -24,10 +26,6 @@ export default {
 </script>
 
 <style scoped>
-section {
-  max-width: 1440px;
-  margin: 0 auto;
-}
 .subtitle {
   overflow: hidden;
   background-image: url('../../assets/images/bg-accueil.jpg');

@@ -1,7 +1,5 @@
 <template>
   <nav>
-    <!--    <li :class="{ active: isActive }" @click="onClick()">ACCUEIL</li>-->
-    <!--    <li :class="{ active: !isActive }" @click="onClick()">A PROPOS</li>-->
     <router-link to="/">ACCUEIL</router-link>
     <router-link to="/about">A PROPOS</router-link>
   </nav>
@@ -10,16 +8,6 @@
 <script>
 export default {
   name: 'Navigation',
-  data() {
-    return {
-      isActive: true,
-    };
-  },
-  methods: {
-    onClick() {
-      this.isActive = !this.isActive;
-    },
-  },
 };
 </script>
 
