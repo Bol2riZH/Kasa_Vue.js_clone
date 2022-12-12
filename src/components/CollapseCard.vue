@@ -1,7 +1,9 @@
 <template>
   <section>
     <div class="top" @click="collapse = !collapse">
-      <h2>{{ description ? 'Description' : 'Equipements' }}</h2>
+      <h2 v-if="description">'Description'</h2>
+      <h2 v-if="equipments">'Equipements'</h2>
+      <h2 v-if="about">{{ about.title }}</h2>
       <img
         src="../assets/icons/arrow_back_ios-24px%202.svg"
         alt="arrow"
@@ -14,6 +16,7 @@
         {{ equipment }}
       </li>
     </ul>
+    <p v-if="about" :class="collapse && 'hidden'">{{ about.text }}</p>
   </section>
 </template>
 
@@ -23,6 +26,7 @@ export default {
   props: {
     description: String,
     equipments: Array,
+    about: Object,
   },
   data() {
     return {
