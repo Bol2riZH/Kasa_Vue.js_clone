@@ -1,35 +1,16 @@
-# Kasa_clone
+# Kasa clone in Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+## Clone Project 7 bis in VUEjs
 
-## Recommended IDE Setup
+After choose to learn React as my first framework, still I wanted to try Vue.
+I think it was the least I can do to be completely sure witch one to choose... 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Well it's not that easy... What I can say is that vue is **fast to get** !
 
-## Customize configuration
+I found that my code is cleaner than with React, but it might be because of more practice since.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+I learn the basic and make it to clone this project all in 3 days, so i am pretty proud.
 
-## Project Setup
+So check it out [here](https://kasa-vue-js-clone.vercel.app/)!
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+![kasa_vue1](https://user-images.githubusercontent.com/101552588/207171256-aa04652e-f758-4a99-82af-6dd1027b2bde.png)
