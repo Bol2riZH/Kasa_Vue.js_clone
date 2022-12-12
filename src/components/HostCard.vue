@@ -39,7 +39,6 @@ export default {
   scale: 102%;
   cursor: pointer;
 }
-
 h2 {
   position: absolute;
   font-size: 1.8rem;
@@ -51,7 +50,6 @@ h2 {
     width: 32rem;
   }
 }
-
 img {
   object-fit: cover;
   width: 100%;

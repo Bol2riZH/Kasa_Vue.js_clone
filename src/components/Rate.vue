@@ -30,7 +30,7 @@ export default {
   width: clamp(1.8rem, 2.5vw, 3.6rem);
   height: clamp(1.8rem, 2.5vw, 3.6rem);
 }
-@media screen and(min-width:992px) {
+@media screen and (min-width: 992px) {
   .rate {
     justify-content: flex-end;
   }
