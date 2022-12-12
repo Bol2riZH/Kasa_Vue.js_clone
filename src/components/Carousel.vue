@@ -19,6 +19,7 @@
         <img class="host-picture" :src="pictures[picture]" alt="host place" />
       </li>
     </ul>
+    <span>{{ picture + 1 }}/{{ pictures.length }}</span>
   </section>
 </template>
 
@@ -89,6 +90,16 @@ li {
   min-height: 25rem;
   max-height: 41rem;
   border-radius: 1rem;
+}
+@media screen and (min-width: 768px) {
+  span {
+    display: block;
+    position: absolute;
+    bottom: 1.7rem;
+    right: 50%;
+    font-size: 1.8rem;
+    color: white;
+  }
 }
 .hidden {
   display: none;
