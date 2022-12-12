@@ -5,7 +5,7 @@
       <h2 v-if="equipments">Equipements</h2>
       <h2 v-if="about">{{ about.title }}</h2>
       <img
-        src="../assets/icons/arrow_back_ios-24px%202.svg"
+        src="../assets/icons/arrow.svg"
         alt="arrow"
         :class="collapse && 'rotate'"
       />

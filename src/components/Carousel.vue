@@ -3,13 +3,13 @@
     <div class="arrows">
       <img
         :class="['left-arrow', { hidden: pictures.length === 1 }]"
-        src="../assets/icons/arrow_back_ios-24px%202.svg"
+        src="../assets/icons/arrow.svg"
         alt="arrow to slide left"
         @click="sliderLeft"
       />
       <img
         :class="['right-arrow', { hidden: pictures.length === 1 }]"
-        src="../assets/icons/arrow_back_ios-24px%202.svg"
+        src="../assets/icons/arrow.svg"
         alt="arrow to slide right"
         @click="sliderRight"
       />
