@@ -24,8 +24,8 @@ import CollapseCard from '../CollapseCard.vue';
       </aside>
     </header>
     <section class="bottom">
-      <CollapseCard>{{ host.description }}</CollapseCard>
-      <CollapseCard>{{ host.equipments }}</CollapseCard>
+      <CollapseCard :description="host.description" />
+      <CollapseCard :equipments="host.equipments" />
     </section>
   </section>
 </template>
@@ -52,6 +52,10 @@ header {
 }
 h2 {
   font-size: clamp(1.8rem, 2vw, 3.6rem);
+}
+p {
+  margin: 0.5rem 0;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
 }
 aside {
   display: flex;
@@ -80,7 +84,6 @@ img {
 .bottom {
   display: flex;
   flex-direction: column;
-
   gap: 2rem;
 }
 @media screen and (min-width: 992px) {
@@ -91,10 +94,6 @@ img {
   }
   h2 {
     white-space: nowrap;
-  }
-  p {
-    margin: 0.5rem 0;
-    font-size: clamp(1.4rem, 2vw, 1.8rem);
   }
   aside {
     flex-direction: column-reverse;
