@@ -91,6 +91,9 @@ li {
   max-height: 41rem;
   border-radius: 1rem;
 }
+span {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   span {
     display: block;
