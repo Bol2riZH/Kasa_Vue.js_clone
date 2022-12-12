@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="top" @click="collapse = !collapse">
-      <h2 v-if="description">'Description'</h2>
-      <h2 v-if="equipments">'Equipements'</h2>
+      <h2 v-if="description">Description</h2>
+      <h2 v-if="equipments">Equipements</h2>
       <h2 v-if="about">{{ about.title }}</h2>
       <img
         src="../assets/icons/arrow_back_ios-24px%202.svg"
