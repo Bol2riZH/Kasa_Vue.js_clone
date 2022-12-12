@@ -58,15 +58,12 @@ export default {
 section {
   overflow: hidden;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .arrows {
   position: absolute;
   display: flex;
   justify-content: space-between;
+  top: 40%;
   width: 100%;
   height: clamp(2.4rem, 4vw, 8rem);
 }

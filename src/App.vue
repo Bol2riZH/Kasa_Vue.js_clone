@@ -7,7 +7,7 @@ import Footer from './components/layout/Footer.vue';
 <template>
   <main>
     <Header />
-    <router-view />
+    <router-view class="pages-view" />
   </main>
   <Footer />
 </template>
@@ -22,5 +22,8 @@ export default {
 main {
   max-width: 1440px;
   margin: 0 auto;
+}
+.pages-view {
+  margin: 0 2rem;
 }
 </style>

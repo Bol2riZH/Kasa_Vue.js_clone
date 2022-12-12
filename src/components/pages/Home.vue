@@ -51,10 +51,6 @@ p {
   }
 }
 
-section {
-  margin: 0 2rem;
-}
-
 ul {
   display: flex;
   flex-direction: column;
